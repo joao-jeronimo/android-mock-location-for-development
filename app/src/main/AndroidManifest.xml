@@ -20,7 +20,7 @@
         </activity>
 
         <receiver
-            android:name="amotz.example.com.mocklocationfordeveloper.adbBrodcastReceiver"
+            android:name="amotz.example.com.mocklocationfordeveloper.AdbBroadcastReceiver"
             android:enabled="true"
             android:exported="true" >
             <intent-filter>

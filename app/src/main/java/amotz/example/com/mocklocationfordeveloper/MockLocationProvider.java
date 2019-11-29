@@ -12,12 +12,12 @@ class MockLocationProvider {
     private String providerName;
     private Context ctx;
 
-    MockLocationProvider(String name, Context ctx) {
+    MockLocationProvider(String name, Context ctx)
+    {
         this.providerName = name;
         this.ctx = ctx;
 
-        LocationManager lm = (LocationManager) ctx.getSystemService(
-                Context.LOCATION_SERVICE);
+        LocationManager lm = (LocationManager) ctx.getSystemService(Context.LOCATION_SERVICE);
         lm.addTestProvider(providerName, false, false, false, false, false,
                 true, true, 0, 5);
         lm.setTestProviderEnabled(providerName, true);
@@ -40,8 +40,7 @@ class MockLocationProvider {
     }
 
     void shutdown() {
-        LocationManager lm = (LocationManager) ctx.getSystemService(
-                Context.LOCATION_SERVICE);
+        LocationManager lm = (LocationManager) ctx.getSystemService(Context.LOCATION_SERVICE);
         lm.removeTestProvider(providerName);
     }
 }
