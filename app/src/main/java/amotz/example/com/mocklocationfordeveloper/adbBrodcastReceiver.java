@@ -33,7 +33,6 @@ public class adbBrodcastReceiver extends BroadcastReceiver {
 
             double lat, lon, alt;
             float accurate;
-
             lat = Double.parseDouble(intent.getStringExtra("lat") != null ? intent.getStringExtra("lat") : "0");
             lon = Double.parseDouble(intent.getStringExtra("lon") != null ? intent.getStringExtra("lon") : "0");
             alt = Double.parseDouble(intent.getStringExtra("alt") != null ? intent.getStringExtra("alt") : "0");

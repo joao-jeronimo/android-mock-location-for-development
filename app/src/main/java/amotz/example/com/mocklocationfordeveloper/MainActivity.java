@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         if (location.getLatitude() == dummyLat && location.getLongitude() == dummylong) {
             Toast.makeText(this,"Mock location application is working",Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(this,String.format(Locale.US,"setting mock to Latitude=%f, Longitude=%f Altitude=%f Accuracy=%f",
+            Toast.makeText(this,String.format(Locale.US,"Failed setting mock to Latitude=%f, Longitude=%f Altitude=%f Accuracy=%f",
                     location.getLatitude(), location.getLongitude(), location.getAltitude(), location.getAccuracy()),Toast.LENGTH_SHORT).show();
         }
     }
